@@ -5,7 +5,7 @@
 <style>
 body{
 padding:20px;
-background-color:pink:
+background-color:pink;
 }
 div{
 padding:20px;
@@ -26,20 +26,20 @@ background-color:blue;
 </span>
 </div>
 <script>
-const=document.getElementByTagname("body")[0];
-const=document.getElementByTagname("div")[0];
-const=document.getElementByTagname("span")[0];
-const=document.getElementByTagname("button")[0];
-body.addEventListner("click" , ()=>{
+const body=document.getElementsByTagName("body")[0];
+const div=document.getElementsByTagName("div")[0];
+const span=document.getElementsByTagName("span")[0];
+const button=document.getElementsByTagName("button")[0];
+body.addEventListener("click" , ()=>{
 console.log("body was clicked")
 });
-div.addEventListner("click", () => {
+div.addEventListener("click", () => {
 console.log("div was clicked")
 });
-span.addEventListner("click" ,() =>{
+span.addEventListener("click" ,() =>{
 console.log("span was clicked")
 });
-button.addEventListner("click" , ()=>{
+button.addEventListener("click" , ()=>{
 console.log("button was clicked")
 });
 </script>
